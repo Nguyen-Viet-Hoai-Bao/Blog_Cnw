@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="WebContent/WEB-INF/lib"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/HK5/HK4/PBL3_s/myWeb_trai_tre_mo_coi/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.30.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
