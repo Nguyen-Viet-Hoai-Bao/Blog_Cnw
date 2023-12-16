@@ -30,7 +30,6 @@ public class BlogInsert extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//对用户体验的优化，返回回到上次删除的页面
 //		String pageIndex = request.getParameter("pageIndex");
 		String title = request.getParameter("title");
 		String author = request.getParameter("author");
