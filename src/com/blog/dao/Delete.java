@@ -6,11 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Delete {
-	/**
-	 * 用于删除数据库表中数据
-	 * @param sql  传入的sql语句
-	 * @return 返回一个boolean值
-	 */
 	public static boolean DeleteBlog(String sql) {
 		int executeUpdate=0;
 		try {
