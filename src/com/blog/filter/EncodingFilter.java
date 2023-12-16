@@ -47,11 +47,9 @@ public class EncodingFilter implements Filter {
 			System.out.println(url);
 			if(url.endsWith(".jsp")||url.endsWith(".css")||url.endsWith(".js")||url.endsWith("LoginServlet")
 					||url.endsWith(".jpg")||url.endsWith(".png")) {
-				System.out.println("不拦截，直接访问");
 			}else {
 				Object attribute = re.getSession().getAttribute("userid");
 				if (attribute == null || attribute.toString().equals("")) {
-					System.out.println("没有登录");
 					((HttpServletResponse) response).sendRedirect("Login/login.jsp");
 					return;
 				}
