@@ -15,11 +15,6 @@ import com.blog.dao.Db;
 import com.blog.dao.Update;
 import com.blog.entity.Blog;
 
-/**
- * @description 用于更新博客
- * @author Archiver
- * @date 2019-8-18
- */
 @WebServlet("/BlogUpdate")
 public class BlogUpdate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -76,8 +71,6 @@ public class BlogUpdate extends HttpServlet {
 		int code=0;
 		if(flag) {
 			code = 200;
-			//这个方法只能用ajax使用
-//			response.getWriter().write(json);
 			
 		}else {
 			code = 500;
