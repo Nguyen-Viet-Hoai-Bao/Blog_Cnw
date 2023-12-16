@@ -42,18 +42,16 @@ public class RegisterServlet extends HttpServlet {
 		List<Map<String,String>> list = Db.select(sql,new String[] {"id"});
 		String msg = "";
 		if(list.size()<=0) {
-			msg +="此账号可用";
+			msg +="";
 			String sqlInsert = "insert into t_user(userName,pwd) values ('"+user+"','"+pwd+"')";
 			System.out.println(sqlInsert);
 			boolean insert = Db.insertUser(sqlInsert);
 			if(insert) {
-//				msg +="，注册成功";
-				String json = "{\"code\":\"200\",\"msg\":\""+user+"!注册成功\"}";
+				String json = "{\"code\":\"200\",\"msg\":\""+user+"!\"}";
 				response.getWriter().write(json);
 			}
 		}else {
-//			msg +="用户名已被注册!";
-			String json = "{\"code\":\"500\",\"msg\":\"用户名已被注册!\"}";
+			String json = "{\"code\":\"500\",\"msg\":\"!\"}";
 			response.getWriter().write(json);
 		}
 //		response.getWriter().write(msg);
