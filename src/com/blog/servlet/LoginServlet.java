@@ -41,18 +41,15 @@ public class LoginServlet extends HttpServlet {
 		System.out.println(list);
 		String msg="";
 		if(list.size()>0) {
-//			msg = user+"，登录成功！";
-			String json = "{\"code\":\"200\",\"msg\":\""+user+"!登录成功\"}";
+			String json = "{\"code\":\"200\",\"msg\":\""+user+"\"}";
 			request.getSession().setAttribute("userid", list.get(0).get("id"));
 			response.getWriter().print(json);
 //			response.sendRedirect("BlogListServlet");
 		}else {
-//			msg = user+"，登录失败！";
 			String json = "{\"code\":\"500\",\"msg\":\""+user+"!登录失败\"}";
 			response.getWriter().print(json);
 		}
 //		request.setAttribute("msg", msg);
-		//这个是用 form 表单时这样弄
 //		request.getRequestDispatcher("login.jsp").forward(request, response);
 	}
 
