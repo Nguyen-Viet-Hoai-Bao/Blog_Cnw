@@ -12,12 +12,6 @@ import java.util.Map;
 
 
 public class Update {
-
-	/**
-	 * 用于更新修改博客数据
-	 * @param sql  传入的sql语句
-	 * @return 返回一个boolean值
-	 */
 	public static boolean UpdateBlog(String sql){
 		int executeQuery = 0;
 		try {
