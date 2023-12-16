@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>登录</title>
+	<title>Đăng nhập</title>
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/Login/css/main.css" />
 	<link rel="short icon" href="<%=request.getContextPath()%>/Login/images/kodinger.jpg" />
 </head>
@@ -13,7 +13,7 @@
 <div class="whole">
         <div class="top">
             <div class="top_content">
-                <h1>BLOG - 记录你的日常</h1>
+                <h1>BLOG - Lưu lại cuộc sống hàng ngày của bạn</h1>
             </div>
         </div>
         <div class="main">
@@ -31,8 +31,8 @@
                             <input type="password" id="password">
                         </div>
                     </div>
-                    <input type="submit" value="登录" class="submit" onclick="send()">
-                    <a href="<%=request.getContextPath()%>/Register/register.jsp">没有账号？去注册</a>
+                    <input type="submit" value="Submit" class="submit" onclick="send()">
+                    <a href="<%=request.getContextPath()%>/Register/register.jsp">Đăng ký tài khoản</a>
             </div>
         </div>
         <div class="bottom">
@@ -54,9 +54,9 @@ $(document).ready(function () {
 		var pwd = $("#password").val();
 		var data = {"username":user,"password":pwd};
 		if(user==null||user==""){
-			alert("请输入用户名！");
+			alert("Vui lòng nhập tên người dùng！");
 		}else if(pwd==null||pwd==""){
-			alert("请输入密码！");
+			alert("Vui lòng nhập mật khẩu！");
 		}else{
 			$.ajax({
 				url:"<%=request.getContextPath() %>/LoginServlet",
