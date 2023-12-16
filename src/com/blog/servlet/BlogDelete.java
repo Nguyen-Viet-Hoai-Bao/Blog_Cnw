@@ -9,11 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.blog.dao.Delete;
 
-/**
- * @description 用于删除博客
- * @author Archiver
- * @date 2019-8-18
- */
 @WebServlet("/BlogDelete")
 public class BlogDelete extends HttpServlet {
 	private static final long serialVersionUID = 1L;
