@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 			response.getWriter().print(json);
 //			response.sendRedirect("BlogListServlet");
 		}else {
-			String json = "{\"code\":\"500\",\"msg\":\""+user+"!登录失败\"}";
+			String json = "{\"code\":\"500\",\"msg\":\""+user+"!\"}";
 			response.getWriter().print(json);
 		}
 //		request.setAttribute("msg", msg);
