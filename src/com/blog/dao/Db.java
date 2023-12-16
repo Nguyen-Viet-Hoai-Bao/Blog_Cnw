@@ -27,7 +27,6 @@ public class Db {
 		
 	}
 	/**
-	 * 插入数据
 	 * @param sql
 	 * @return
 	 */
@@ -45,7 +44,6 @@ public class Db {
 	}
 
 	/**
-	 * 用户查询
 	 * @param sql
 	 * @return
 	 */
@@ -74,7 +72,6 @@ public class Db {
 		return list;
 	}
 	/**
-	 * 登录查询
 	 * @param sql
 	 * @param args
 	 * @return
@@ -103,7 +100,6 @@ public class Db {
 		return list;
 	}
 	/**
-	 * 登录查询2反射实现
 	 * @param <T>
 	 * @param sql
 	 * @param args
@@ -141,7 +137,6 @@ public class Db {
 		return list;
 	}
 	/**
-	 * 查询总条数
 	 * @param sql
 	 * @return
 	 */
