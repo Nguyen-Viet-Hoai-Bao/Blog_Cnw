@@ -15,11 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.blog.dao.Db;
 import com.blog.entity.Blog;
 
-/**
- * @description 用于处理博客列表的博客呈现和分页
- * @author Archiver
- * @date 2019-8-15
- */
 @WebServlet("/BlogListServlet")
 public class BlogListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -37,11 +32,9 @@ public class BlogListServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String pageIndexStr = request.getParameter("pageIndex");
-		//如果为空则赋值为 1 
 		if(pageIndexStr==null || pageIndexStr.equals("")) {
 			pageIndexStr = "1";
 		}
-		//强制转换成 int 类型
 		int pageIndex = Integer.parseInt(pageIndexStr);
 		
 		String sql = "select * from t_blog limit "+(pageIndex-1)*4+",4";
